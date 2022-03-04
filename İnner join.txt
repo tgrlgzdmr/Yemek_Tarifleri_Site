@@ -1,0 +1,1 @@
+SELECT        Tbl_Kategoriler.KategoriAd, Tbl_Yemekler.Yemekid, Tbl_Yemekler.YemekAd, Tbl_Yemekler.YemekMalzeme, Tbl_Yemekler.YemekTarif, Tbl_Yemekler.YemekResim,Tbl_Yemekler.YemekTarih, Tbl_Yemekler.YemekPuan, Tbl_Kategoriler.Kategoriid FROM            Tbl_Kategoriler INNER JOIN Tbl_Yemekler ON Tbl_Kategoriler.Kategoriid = Tbl_Yemekler.Kategoriid
