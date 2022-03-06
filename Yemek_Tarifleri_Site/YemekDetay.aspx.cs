@@ -23,7 +23,7 @@ public partial class _Default : System.Web.UI.Page
         bgl.baglanti().Close();
 
 
-        SqlCommand cmd2 = new SqlCommand("select * from Tbl_Yorumlar where Yemekid=@p1",bgl.baglanti());
+        SqlCommand cmd2 = new SqlCommand("select * from Tbl_Yorumlar where Yemekid=@p1 and YorumOnay=1",bgl.baglanti());
         cmd2.Parameters.AddWithValue("@p1",yemekid);
         SqlDataReader oku = cmd2.ExecuteReader();
         DataList2.DataSource = oku;
