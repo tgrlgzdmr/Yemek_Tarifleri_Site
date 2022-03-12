@@ -22,6 +22,16 @@
         .auto-style4 {
             color: #0066FF;
         }
+        .auto-style5 {
+            text-align: right;
+            height: 20px;
+            width: 700px;
+        }
+        .auto-style6 {
+            height: 307px;
+            width: 700px;
+            margin-top: 22px;
+        }
     </style>
 </head>
 <body>
@@ -43,8 +53,19 @@
             </tr>
         </table>
     </div>
-    <div style="margin-left:300px; height:20px; width:700px;">&nbsp;</div>
-    <div style="margin-left:300px; height:307px; width:700px;">
+    <div style="margin-left:300px; " Height="30px" Width="30px"  class="auto-style5">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <a href="AdminLogin.aspx">
+                        <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Resimler/icons8_lock_80px.png" Width="30px" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-left:300px; " class="auto-style6">
         <div style="height:auto; width:200px;background-color: #ce7171; float:left;">
             <span class="auto-style2"><strong>KATEGORİLER</strong></span><br />
             <br />
