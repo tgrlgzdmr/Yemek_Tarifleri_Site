@@ -41,11 +41,13 @@ public partial class YemekAdminDetay : System.Web.UI.Page
 
     protected void BtnEkle_Click(object sender, EventArgs e)
     {
+        Fikon.SaveAs(Server.MapPath("/Resimler/"+Fikon.FileName));
+
         SqlCommand cmd2=new SqlCommand("update Tbl_Yemekler set YemekAd=@p1, YemekMalzeme=@p2, YemekTarif=@p3, YemekResim=@p4, Kategoriid=@p5 where Yemekid=@p6",bgl.baglanti());
         cmd2.Parameters.AddWithValue("@p1", TxtAd.Text);
         cmd2.Parameters.AddWithValue("@p2", TxtMalzeme.Text);
         cmd2.Parameters.AddWithValue("@p3", TxtTarif.Text);
-        cmd2.Parameters.AddWithValue("@p4", Fikon.FileName);
+        cmd2.Parameters.AddWithValue("@p4", "~/Resimler/"+Fikon.FileName);
         cmd2.Parameters.AddWithValue("@p5", DrpKategori.SelectedValue);
         cmd2.Parameters.AddWithValue("@p6", id);
         cmd2.ExecuteNonQuery();

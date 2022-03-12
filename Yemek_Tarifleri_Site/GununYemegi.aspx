@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center">
-                        <asp:Image ID="Image1" runat="server" Height="176px" style="text-align: center" Width="421px" ImageUrl="~/Resimler/Mucver.png" />
+                        <asp:Image ID="Image1" runat="server" Height="176px" style="text-align: center" Width="421px" ImageUrl='<%# Eval("YemekResim") %>' />
                     </td>
                 </tr>
                 <tr>
